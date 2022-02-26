@@ -4,5 +4,9 @@ const IMGS = [...Array(NUMBER_OF_IMAGES).keys()];
 const choseImg = IMGS[Math.floor(Math.random() * IMGS.length)];
 
 bgImageSrc = `url(img/${choseImg}.jpg)`;
-
-document.querySelector(".container").style.backgroundImage = bgImageSrc;
+const setBgImageToContainer = () => {
+  document.querySelector(".container").style.backgroundImage = bgImageSrc;
+};
+window.onload = () => {
+  setBgImageToContainer();
+};
