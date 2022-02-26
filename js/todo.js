@@ -47,7 +47,7 @@ const saveTodos = () => {
 
 const createNewTodoObj = (newTodoTask) => {
   return {
-    task: newTodoTaskInput,
+    task: newTodoTask,
     id: String(new Date().getTime()),
   };
 };

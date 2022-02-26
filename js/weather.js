@@ -29,9 +29,10 @@ const printWeatherData = (weatherData) => {
   const name = weatherData.name;
   const weather = weatherData.weather[0].main;
   const temperature = weatherData.main.temp;
-  const weatherSpan = document.querySelector("#weather span:first-child");
-  const citySpan = document.querySelector("#weather span:last-child");
-  weatherSpan.innerText = `${weather}, ${temperature}`;
+
+  const citySpan = document.querySelector(".weather .city");
+  const weatherSpan = document.querySelector(".weather .weather-data");
+  weatherSpan.innerText = `${weather} ${temperature}°`;
   citySpan.innerText = name;
 };
 

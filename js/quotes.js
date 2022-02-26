@@ -9,8 +9,8 @@ const QUOTES = [
   },
 ];
 
-const quote = document.querySelector("#quote span:first-child");
-const author = document.querySelector("#quote span:last-child");
+const quote = document.querySelector(".quote-text");
+const author = document.querySelector(".quote-writer");
 
 const todaysQuote = QUOTES[Math.floor(Math.random() * QUOTES.length)];
 quote.innerText = todaysQuote.quote;
